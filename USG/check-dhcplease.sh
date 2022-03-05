@@ -33,7 +33,7 @@ Script & log:
 
 echo "starting Ping test"
 
-if /bin/ping -c 1 80.221.169.111 | grep "100% packet loss";
+if /bin/ping -c 1 EXTERNAL-IP-HERE | grep "100% packet loss";
 then
 echo '*************************************' >> /config/user-data/scripts/dhcp-logit.txt;
 echo 'No internet connection' >> /config/user-data/scripts/dhcp-logit.txt;
