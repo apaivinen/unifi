@@ -10,10 +10,9 @@ renew dhcp interface eth0
 Info & steps to access the scripts
 1. Enable SSH on controller
 2. Enable port forward from wan to controllers ssh port
-3. Enable internet in firewall rule from hml to parola
-4. Enable device SSH from remote controller settings -> system -> Network device ssh authentication
-5. SSH in to controller
-6. SSH in to device using creds from step 4
+3. Enable device SSH from remote controller settings -> system -> Network device ssh authentication
+4. SSH in to controller
+5. SSH in to device using creds from step 4
 
 Dont forget to disable steps 1-4 after you are done.
 
@@ -33,7 +32,7 @@ Script & log:
 
 echo "starting Ping test"
 
-if /bin/ping -c 1 EXTERNAL-IP-HERE | grep "100% packet loss";
+if /bin/ping -c 1 google.com | grep "100% packet loss";
 then
 echo '*************************************' >> /config/user-data/scripts/dhcp-logit.txt;
 echo 'No internet connection' >> /config/user-data/scripts/dhcp-logit.txt;
