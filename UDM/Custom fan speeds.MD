@@ -8,7 +8,7 @@ Links:
 
 
 
-## Default values on 5.8.2021 (version 1.9.0)
+## Default values on 8.5.2022 (version 1.11.4)
 ```bash
 cat /sys/class/hwmon/hwmon0/device/pwm1_enable
 1
