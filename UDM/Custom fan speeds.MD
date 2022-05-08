@@ -8,7 +8,7 @@ Links:
 
 
 
-## Default values on 8.5.2022 (version 1.11.4)
+## Default values on 8.5.2022 (Unifi OS UDM Pro 1.11.4 )
 ```bash
 cat /sys/class/hwmon/hwmon0/device/pwm1_enable
 1
